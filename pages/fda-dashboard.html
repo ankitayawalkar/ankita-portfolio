@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FDA Regulatory Intelligence Dashboard | Dr. Ankita Yawalkar</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+<h2 class="logo">Dr. Ankita Yawalkar</h2>
+
+<ul>
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="experience.html">Experience</a></li>
+
+<li><a href="publications.html">Publications</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<section class="content-section">
+
+<h1>📊 FDA Medical Device Regulatory Market Intelligence Dashboard (1976–2024)</h1>
+
+
+
+<h2>📌 Project Overview</h2>
+
+<p>
+
+This project presents an end-to-end analytical study of U.S. FDA medical device submissions using publicly available 510(k) and PMA datasets (1976–2024). The objective was to transform historical regulatory filing data into structured market intelligence insights through dimensional modeling, DAX-based metrics, and strategic visualization in Power BI.
+
+</p>
+
+<p>
+
+Rather than focusing on compliance reporting, this analysis interprets regulatory throughput as a proxy for innovation density, competitive positioning, and therapeutic segment evolution.
+
+</p>
+
+
+
+<h2>📂 Dataset</h2>
+
+<p><strong>Source:</strong></p>
+
+<ul>
+
+<li>U.S. FDA Public Databases</li>
+
+<li>510(k) Premarket Notification Database</li>
+
+<li>Premarket Approval (PMA) Database</li>
+
+</ul>
+
+<p><strong>Time Range:</strong> 1976–2024</p>
+
+<p>Data was extracted, cleaned, and transformed into a star-schema model with:</p>
+
+<ul>
+
+<li><strong>Fact Table:</strong> Regulatory Submissions</li>
+
+<li><strong>Dimension Tables:</strong> Date, Submission Type, Applicant, Advisory Committee</li>
+
+</ul>
+
+
+
+<h2>🛠 Technical Implementation</h2>
+
+<ul>
+
+<li>Data cleaning and transformation using Power Query</li>
+
+<li>Creation of dimensional data model (Fact + Date dimension)</li>
+
+<li>DAX measures including:
+
+<ul>
+
+<li>Total Submissions</li>
+
+<li>Average Annual Filings</li>
+
+<li>Long-term CAGR</li>
+
+<li>Manufacturer Growth Rate</li>
+
+<li>Pathway Share (%)</li>
+
+</ul>
+
+</li>
+
+<li>Competitive segmentation using scale vs growth matrix</li>
+
+<li>Multi-level regulatory driver analysis via Decomposition Tree</li>
+
+</ul>
+
+
+
+<h2>📈 Key Analytical Insights</h2>
+
+<p><strong>1️⃣ Structural Market Expansion</strong></p>
+
+<p>
+
+Regulatory filings demonstrate sustained long-term growth with a CAGR of approximately [Insert CAGR%], reflecting structural innovation momentum rather than cyclical fluctuation.
+
+</p>
+
+
+
+<p><strong>2️⃣ 510(k) Pathway Dominance</strong></p>
+
+<p>
+
+Approximately [Insert %] of total submissions occur through the 510(k) pathway, confirming incremental, predicate-based innovation as the dominant commercialization strategy. PMA submissions represent high-risk and breakthrough device segments.
+
+</p>
+
+
+
+<p><strong>3️⃣ Competitive Concentration</strong></p>
+
+<p>
+
+Top manufacturers such as Medtronic, Boston Scientific, and Abbott consistently lead in regulatory throughput. The Top 10 manufacturers account for ~[Insert %] of total filings, indicating meaningful competitive concentration.
+
+</p>
+
+
+
+<p><strong>4️⃣ Competitive Positioning Segmentation</strong></p>
+
+<p>By mapping manufacturers across:</p>
+
+<ul>
+
+<li>Average annual submissions (scale)</li>
+
+<li>CAGR (growth momentum)</li>
+
+</ul>
+
+<p>Four strategic segments emerge:</p>
+
+<ul>
+
+<li>High-scale / High-growth Leaders</li>
+
+<li>Mature Dominant Players</li>
+
+<li>Emerging Growth Firms</li>
+
+<li>Niche / Low-Growth Participants</li>
+
+</ul>
+
+
+
+<p>
+
+This framework converts regulatory activity into competitive intelligence.
+
+</p>
+
+
+
+<p><strong>5️⃣ Advisory Committee Hotspots</strong></p>
+
+<p>
+
+Submission clustering across advisory committees highlights therapeutic domains with high innovation density, particularly within cardiovascular, orthopedic, and radiological device categories.
+
+</p>
+
+
+
+<h2>🧠 Why This Project Matters</h2>
+
+<p>
+
+Regulatory datasets are often viewed as compliance records.
+
+</p>
+
+<p>
+
+However, when modeled longitudinally and analyzed dimensionally, they reveal:
+
+</p>
+
+<ul>
+
+<li>Innovation cycles</li>
+
+<li>Competitive momentum</li>
+
+<li>Market concentration</li>
+
+<li>Therapeutic saturation patterns</li>
+
+</ul>
+
+
+
+<p>
+
+This project demonstrates how domain expertise in regulatory affairs can be integrated with analytical modeling and visualization to generate structured market intelligence.
+
+</p>
+
+<h2>Dashboard Preview</h2>
+
+<img src="../assets/images/S1.jpg" width="100%" style="margin-bottom:20px; border-radius:10px;">
+
+<img src="../assets/images/S2.jpg" width="100%" style="margin-bottom:20px; border-radius:10px;">
+
+<img src="../assets/images/S3.jpg" width="100%" style="margin-bottom:20px; border-radius:10px;">
+
+
+<a href="../assets/dashboard.pbix" class="btn pdf-btn">
+Download Power BI File
+</a>
+
+</section>
+
+
+</body>
+
+</html>
